@@ -1,0 +1,26 @@
+/* input { */
+    /* float: left; */
+    /* width:  80px; */
+    /* height:100%; */
+    /* object-fit: contain; */
+    /* width: auto; */
+    /* overflow : hidden; */
+/* } */
+
+input {
+    /* float: left; */
+    width:  200px;
+    height:200px;
+    object-fit: fill;
+    /* width: auto; */
+    /* overflow : hidden; */
+}
+
+.class div {
+
+    float: center;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    overflow : hidden;
+}

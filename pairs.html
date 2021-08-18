@@ -1,36 +1,50 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
     </head>
 
     <body>
-        <table >
-          
-            <tr>
-                <td> <input type="image" src="static/leedscrest.jpg" id="box1" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box2" value=""onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box3" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box4" value="" onclick="pickBox(id)">  </td>    
+        <div class="container ">
+        <div class="col"></div>
+        <div class="col">
+            <table >
+            
+                <tr> 
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box0" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box1" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box2" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box3" value="" onclick="pickBox(id)">  </td>    
+                    
+                </tr> 
+                <tr>
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box4" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box5" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box6" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box7" value="" onclick="pickBox(id)">  </td>    
+                </tr>   
+                <tr>
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box8" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box9" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box10" value="" onclick="pickBox(id)">  </td>    
+                    <td> <input class="img-thumbnail" type="image" src="static/leedscrest.jpg" id="box11" value="" onclick="pickBox(id)">  </td>    
+    
+                </tr> 
+                <br>        
+            </table>
+        </div>
 
-            </tr> 
-            <br>
-            <tr>
-                <td> <input type="image" src="static/leedscrest.jpg" id="box5" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box6" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box7" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box8" value="" onclick="pickBox(id)">  </td>    
-            </tr>   
-            <br>
-            <tr>
-                <td> <input type="image" src="static/leedscrest.jpg" id="box9" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box10" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box11" value="" onclick="pickBox(id)">  </td>    
-                <td> <input type="image" src="static/leedscrest.jpg" id="box12" value="" onclick="pickBox(id)">  </td>    
- 
-            </tr> 
-            <br>
-        </table>
+        <button class="col align-self-center" onclick="resetGame()"> RESET GAME </button>
+        <br>
+        <div class="card">
+            <div id="tries" class="card-body"> Number of Tries - 0</div>
+        </div>
 
+        <div class="col"></div>
+    </div>
+    
+
+        
     <script type="text/javascript" src="pairs.js"> </script>
 
 </body>
